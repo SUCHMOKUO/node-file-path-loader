@@ -1,0 +1,21 @@
+name: Workflow
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  npm-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v2-beta
+        with:
+          node-version: "14"
+
+      - uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
+          check-version: true
