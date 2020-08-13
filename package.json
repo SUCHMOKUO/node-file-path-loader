@@ -1,5 +1,5 @@
 {
-  "name": "file-path-loader",
+  "name": "node-file-path-loader",
   "version": "1.0.0",
   "description": "A webpack loader that get the absolute path of file imported at runtime.",
   "main": "index.js",
