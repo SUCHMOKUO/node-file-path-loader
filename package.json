@@ -1,6 +1,6 @@
 {
   "name": "node-file-path-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A webpack loader that get the absolute path of file imported at runtime.",
   "main": "index.js",
   "repository": {
@@ -17,7 +17,9 @@
     "electron",
     "worker"
   ],
-  "scripts": {},
+  "scripts": {
+    "set-version": "npm version --no-git-tag-version --allow-same-version"
+  },
   "author": "mokuo",
   "bugs": {
     "url": "https://github.com/SUCHMOKUO/node-file-path-loader/issues"
