@@ -10,8 +10,8 @@ module.exports = function (content) {
     filename = filename.replace(/\.[^.]+$/, ".js");
   }
 
-  let outputPath = options.outputPath
-    ? path.join(options.outputPath, filename)
+  const outputPath = options.outputPath
+    ? path.posix.join(options.outputPath, filename)
     : filename;
 
   this.emitFile(outputPath, content);
